@@ -1,0 +1,9 @@
+
+.scenecontrol-attribution {
+    -fx-background-color: rgba(100%, 100%, 100%, 0.65);
+}
+.scenecontrol-attribution-label {
+       -fx-font-size: 8pt;
+       -fx-text-fill: #323232;
+   -fx-background-color: transparent;
+   }

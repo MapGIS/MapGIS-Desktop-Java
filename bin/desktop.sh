@@ -1,0 +1,1 @@
+java -jar mapgis_ribbonapploader.jar

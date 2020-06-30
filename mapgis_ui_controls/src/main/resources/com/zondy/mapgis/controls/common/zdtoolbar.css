@@ -1,0 +1,44 @@
+/**
+* @file zdtoolbar.css
+* @brief 停靠控件的默认样式.
+*
+* Copyright (C) 2019 ZondyCyber
+*/
+
+.tool-bar {
+    -fx-background: rgb(235, 236, 239);
+    -fx-spacing: 4;
+}
+
+.tool-bar .button {
+    -fx-padding: 2 4 2 4;
+    -fx-background-color: transparent;
+    -fx-content-display: graphic-only;
+}
+
+.tool-bar .button:hover {
+    -fx-background-color: #C5C5C5
+}
+
+.tool-bar .button:pressed {
+    -fx-background-color: #AEAEAE;
+}
+
+.tool-bar .toggle-button {
+    -fx-padding: 2 4 2 4;
+    -fx-background-color: transparent;
+    -fx-content-display: graphic-only;
+}
+
+.tool-bar .toggle-button:hover {
+    -fx-background-color: #C5C5C5
+}
+
+.tool-bar .toggle-button:pressed {
+    -fx-background-color: #AEAEAE;
+}
+
+.tool-bar .toggle-button:selected {
+    -fx-background-color: #AEAEAE;
+}
+

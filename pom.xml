@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zondy.mapgis</groupId>
+    <artifactId>desktop</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>mapgis_dockfx</module>
+        <module>mapgis_ribbonfx</module>
+        <module>mapgis_ui_controls</module>
+        <module>mapgis_pluginengine</module>
+        <module>mapgis_ribbonapploader</module>
+        <module>mapgis_workspace_plugin</module>
+        <module>mapgis_dataconvert_plugin</module>
+        <module>mapgis_gdbmanager_plugin</module>
+        <module>mapgis_mapeditor_plugin</module>
+        <module>mapgis_rastereditor_plugin</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

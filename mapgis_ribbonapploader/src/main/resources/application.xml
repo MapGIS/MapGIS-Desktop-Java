@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<application createtime="2020-04-29 19:59:02">
+    <packages>
+        <package>com.zondy.mapgis.gdbmanager.plugin</package>
+        <package>com.zondy.mapgis.workspace.plugin</package>
+        <package>com.zondy.mapgis.mapeditor.plugin</package>
+    </packages>
+    <mainapp caption="工作空间" windowstate="maximized" width="1936.0" height="1936.0" x="-8.0" y="-8.0"/>
+    <welcomescreens/>
+    <ribboncontrol>
+        <quickaccesstoolbar/>
+        <ribbonpages>
+            <ribbonpage name="com.zondy.mapgis.workspace.plugin.ribbon.ARibbonPageStart" text="开始">
+                <ribbonpagegroup name="com.zondy.mapgis.workspace.plugin.ribbon.RibbonPageGroupFile" text="文档">
+                    <item name="com.zondy.mapgis.workspace.plugin.command.CreateCommand" caption="新建" hint="新建地图文档" type="command" begingroup="false"/>
+                    <item name="com.zondy.mapgis.workspace.plugin.command.OpenCommand" caption="打开" hint="打开地图文档" type="command" begingroup="false"/>
+                    <item name="f1dc2233-932b-4045-be0d-156b2fb6742d" type="column" begingroup="false">
+                        <item name="com.zondy.mapgis.workspace.plugin.command.SaveCommand" caption="保存" hint="保存地图文档" type="command" begingroup="false"/>
+                        <item name="com.zondy.mapgis.workspace.plugin.command.SaveAsCommand" caption="另存为" hint="另存为" type="command" begingroup="false"/>
+                        <item name="com.zondy.mapgis.workspace.plugin.command.CloseCommand" caption="关闭" hint="关闭地图文档" type="command" begingroup="false"/>
+                    </item>
+                </ribbonpagegroup>
+                <ribbonpagegroup name="com.zondy.mapgis.workspace.plugin.ribbon.RibbonPageGroupMap" text="二维地图">
+                    <item name="com.zondy.mapgis.workspace.plugin.command.AddMapCommand" caption="添加地图" hint="添加二维地图" type="command" begingroup="false"/>
+                    <item name="cfe5e870-2838-4a36-96ee-d64a9dff515d" type="column" begingroup="false">
+                        <item name="com.zondy.mapgis.workspace.plugin.command.AddLayerCommand" caption="添加图层" hint="添加图层" type="command" begingroup="false"/>
+                        <item name="com.zondy.mapgis.workspace.plugin.command.AddServerLayerCommand" caption="添加服务图层" hint="添加服务图层" type="command" begingroup="false"/>
+                    </item>
+                </ribbonpagegroup>
+                <ribbonpagegroup name="com.zondy.mapgis.workspace.plugin.ribbon.RibbonPageGroupScene" text="三维场景">
+                    <item name="com.zondy.mapgis.workspace.plugin.command.AddSceneCommand" caption="添加场景" hint="添加场景" type="command" begingroup="false"/>
+                    <item name="34727f85-a3ed-4f72-8915-c7c50c81815f" type="column" begingroup="false">
+                        <item name="com.zondy.mapgis.workspace.plugin.command.Add3DLayerSubItem" caption="添加图层" hint="添加图层" type="subitem" begingroup="false">
+                            <item name="com.zondy.mapgis.workspace.plugin.command.AddModelLayerCommand" caption="添加模型层" type="command"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.AddTerrainLayerCommand" caption="添加地形层" type="command"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.AddLabelLayerCommand" caption="添加注记层" type="command"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.Add2DLayerCommand" caption="添加矢量图层" type="command"/>
+                        </item>
+                        <item name="com.zondy.mapgis.workspace.plugin.command.AddServer3DLayerCommand" caption="添加服务图层" hint="添加服务图层" type="command" begingroup="false"/>
+                    </item>
+                </ribbonpagegroup>
+                <ribbonpagegroup name="com.zondy.mapgis.workspace.plugin.ribbon.RibbonPageGroupMapControl" text="地图">
+                    <item name="395217e2-d69d-458f-aa98-43f10dcb9ee6" type="column" begingroup="false">
+                        <item name="b31cdd78-2aff-40e4-bf7c-045011463133" type="buttongroup" begingroup="false">
+                            <item name="com.zondy.mapgis.workspace.plugin.command.ZoomInCommand" caption="放大" hint="放大" type="command" begingroup="false"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.ZoomOutCommand" caption="缩小" hint="缩小" type="command" begingroup="false"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.MoveWindowCommand" caption="移动" hint="移动" type="command" begingroup="false"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.RestoreCommand" caption="复位" hint="复位" type="command" begingroup="false"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.PreWindowCommand" caption="上级窗口" hint="上级窗口" type="command" begingroup="false"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.OriginalDisplayCommand" caption="1:1显示" hint="1:1显示" type="command" begingroup="false"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.EagleEyeCommand" caption="鹰眼" hint="鹰眼" type="command" begingroup="false"/>
+                        </item>
+                        <item name="67d73cdb-975e-48e9-84dd-2f69ff37a7de" type="buttongroup" begingroup="false">
+                            <item name="com.zondy.mapgis.workspace.plugin.command.RedoCommand" caption="恢复" hint="恢复" type="command" begingroup="false"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.UndoCommand" caption="撤销" hint="撤销" type="command" begingroup="false"/>
+                            <item name="com.zondy.mapgis.workspace.plugin.command.ClearToolCommand" caption="清空状态" hint="清空状态" type="command" begingroup="false"/>
+                        </item>
+                    </item>
+                </ribbonpagegroup>
+            </ribbonpage>
+            <ribbonpage name="com.zondy.mapgis.workspace.plugin.ribbon.DRibbonPageSettings" text="设置"/>
+            <ribbonpage name="com.zondy.mapgis.mapeditor.plugin.ribbon.RibbonPageEdit" text="编辑">
+                <ribbonpagegroup name="com.zondy.mapgis.mapeditor.plugin.ribbon.RibbonPageEdit$RibbonPageGroupEdit" text="编辑">
+                    <item name="com.zondy.mapgis.mapeditor.plugin.command.edit.StartOrEndEditCommand" caption="开始编辑" hint="开始/结束编辑" type="command" begingroup="false"/>
+                    <item name="com.zondy.mapgis.mapeditor.plugin.command.edit.SaveEditsCommand" caption="保存编辑" hint="保存编辑" type="command" begingroup="false"/>
+                    <item name="d6be27fe-a355-4729-a85d-3bfedff7f6c3" type="column" begingroup="true">
+                        <item name="f0e59e68-3630-468a-bd62-7d46da32249a" type="buttongroup" begingroup="false">
+                            <item name="com.zondy.mapgis.mapeditor.plugin.command.edit.SelectCommand" caption="选择" hint="选择" type="checkcommand" begingroup="false"/>
+                            <item name="com.zondy.mapgis.mapeditor.plugin.command.edit.MoveCommand" caption="移动" hint="移动选中图元" type="command" begingroup="true"/>
+                            <item name="com.zondy.mapgis.mapeditor.plugin.command.edit.RemoveCommand" caption="移除" hint="移除选中图元" type="command" begingroup="false"/>
+                            <item name="com.zondy.mapgis.mapeditor.plugin.command.edit.InputCommand" caption="输入" hint="输入" type="checkcommand" begingroup="true"/>
+                        </item>
+                        <item name="e1db17a0-79e3-4bf3-8adb-9cd7bfc439e7" type="buttongroup" begingroup="false">
+                            <item name="com.zondy.mapgis.mapeditor.plugin.command.edit.VertexEditCommand" caption="编辑顶点" hint="编辑顶点" type="checkcommand" begingroup="false"/>
+                        </item>
+                    </item>
+                </ribbonpagegroup>
+                <ribbonpagegroup name="com.zondy.mapgis.mapeditor.plugin.ribbon.RibbonPageEdit$RibbonPageGroupSelect" text="选择">
+                    <item name="com.zondy.mapgis.mapeditor.plugin.command.SelectDataByAttCommand" caption="属性选择" hint="按属性查询" type="command" begingroup="false"/>
+                </ribbonpagegroup>
+            </ribbonpage>
+            <ribbonpage name="com.zondy.mapgis.mapeditor.plugin.ribbon.RibbonPageStart" text="分析" isselected="true">
+                <ribbonpagegroup name="com.zondy.mapgis.mapeditor.plugin.ribbon.RibbonPageGroupSpatialAnalysis" text="空间分析">
+                    <item name="e1b06870-9818-43fc-87ae-050619ae0810" type="column" begingroup="false">
+                        <item name="com.zondy.mapgis.mapeditor.plugin.command.BufferAnalysisCommand" caption="缓冲分析" hint="缓冲分析" type="command" begingroup="false"/>
+                        <item name="com.zondy.mapgis.mapeditor.plugin.command.SpatialAnalysisCommand" caption="叠加分析" hint="叠加分析" type="command" begingroup="false"/>
+                    </item>
+                    <item name="31e3abe0-c74b-48e5-b010-90d5a0892235" type="column" begingroup="true">
+                        <item name="com.zondy.mapgis.mapeditor.plugin.command.SpatialQueryCommand" caption="空间查询" hint="空间查询" type="command" begingroup="false"/>
+                        <item name="com.zondy.mapgis.mapeditor.plugin.command.RegFileClipCommand" caption="区文件裁剪" hint="区文件裁剪" type="command" begingroup="false"/>
+                    </item>
+                    <item name="com.zondy.mapgis.mapeditor.plugin.command.TopoCheckCommand" caption="拓扑检查" hint="拓扑检查" type="command" begingroup="true"/>
+                </ribbonpagegroup>
+            </ribbonpage>
+            <ribbonpage name="com.zondy.mapgis.mapeditor.plugin.ribbon.RibbonPageTool" text="工具">
+                <ribbonpagegroup name="com.zondy.mapgis.mapeditor.plugin.ribbon.RibbonPageGroupProjectTransform" text="投影变换">
+                    <item name="com.zondy.mapgis.mapeditor.plugin.command.SimplePntProjectCommand" caption="单点投影" hint="单点投影" type="command" begingroup="false"/>
+                    <item name="778e6bdd-4a8c-4f4f-af9b-95c1f2b8792e" type="column" begingroup="true">
+                        <item name="com.zondy.mapgis.mapeditor.plugin.command.MultiProjectOfVectorCommand" caption="矢量批量投影" hint="矢量批量投影" type="command" begingroup="false"/>
+                        <item name="com.zondy.mapgis.mapeditor.plugin.command.MultiProjectOfRasterCommand" caption="栅格批量投影" hint="栅格批量投影" type="command" begingroup="false"/>
+                    </item>
+                    <item name="com.zondy.mapgis.mapeditor.plugin.command.ElpTransParamSettingCommand" caption="地理转换参数设置" hint="地理转换参数设置" type="command" begingroup="true"/>
+                </ribbonpagegroup>
+            </ribbonpage>
+        </ribbonpages>
+        <ribbonpagecategories/>
+    </ribboncontrol>
+    <dockwindows>
+        <dockwindow dockpos="LEFT">
+            <dockwindow name="com.zondy.mapgis.workspace.plugin.DwWorkspace" text="工作空间" prefwidth="400.0" prefheight="691.0" dockpos="LEFT"/>
+        </dockwindow>
+        <dockwindow dockpos="RIGHT">
+            <dockwindow name="com.zondy.mapgis.gdbmanager.plugin.DWGDBCatalog" text="GDBCatalog" prefwidth="400.0" prefheight="691.0" dockpos="RIGHT"/>
+        </dockwindow>
+    </dockwindows>
+    <contentsviews/>
+</application>

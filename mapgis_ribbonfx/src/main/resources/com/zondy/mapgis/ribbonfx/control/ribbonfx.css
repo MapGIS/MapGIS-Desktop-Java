@@ -1,0 +1,574 @@
+/**
+* @file ribbonfx.css
+* @brief ribbon功能区的默认样式.
+*
+* Copyright (C) 2019 ZondyCyber
+*/
+
+/*region ribbon*/
+.ribbon {
+    -fx-background: white;
+
+    BACE_COLOR: #808080;
+    HIGHLIGHT_COLOR: derive(BACE_COLOR, 95%);
+    SELECTED_COLOR: derive(HIGHLIGHT_COLOR, -3%);
+
+    TEXT_COLOR: #4b4b4b;
+    TITLES_COLOR: #767676;
+}
+
+.ribbon .label {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12;
+    -fx-text-fill: TEXT_COLOR;
+}
+
+/*endregion*/
+
+/*region tab-pane*/
+.tab-pane:bottom > .tab-header-area {
+    -fx-padding: 0 2 5 5 !important;
+}
+
+.ribbon > .outer-container > .tab-pane {
+    -fx-tab-min-height: 26;
+    -fx-tab-max-height: 26;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-content-area {
+    -fx-background-color: #cccccc, white;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area {
+    -fx-padding: 0 2 0 5;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-background-color: transparent, transparent, white;
+    -fx-background-radius: 0, 0, 0;
+    -fx-padding: 1 12 1 12;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: transparent, #cccccc, white;
+    -fx-background-radius: 0, 0, 0;
+}
+
+/*region 各种颜色的tab*/
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.red {
+    -fx-background-color: transparent, transparent, #FFEBFD;
+    -fx-background-radius: 0, 0, 0;
+    -fx-padding: 1 12 1 12;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.red:selected {
+    -fx-background-color: transparent, #cccccc, #FFEBFD;
+    -fx-background-radius: 0, 0, 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.red > .tab-container > .tab-label {
+    -fx-text-fill: #90456E;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.green {
+    -fx-background-color: transparent, transparent, #DCF9DD;
+    -fx-background-radius: 0, 0, 0;
+    -fx-padding: 1 12 1 12;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.green:selected {
+    -fx-background-color: transparent, #cccccc, #DCF9DD;
+    -fx-background-radius: 0, 0, 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.green > .tab-container > .tab-label {
+    -fx-text-fill: #2C7830;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.yellow {
+    -fx-background-color: transparent, transparent, #FFFFE1;
+    -fx-background-radius: 0, 0, 0;
+    -fx-padding: 1 12 1 12;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.yellow:selected {
+    -fx-background-color: transparent, #cccccc, #FFFFE1;
+    -fx-background-radius: 0, 0, 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.yellow > .tab-container > .tab-label {
+    -fx-text-fill: #7D734F;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.orange {
+    -fx-background-color: transparent, transparent, #FFF0DD;
+    -fx-background-radius: 0, 0, 0;
+    -fx-padding: 1 12 1 12;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.orange:selected {
+    -fx-background-color: transparent, #cccccc, #FFF0DD;
+    -fx-background-radius: 0, 0, 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.orange > .tab-container > .tab-label {
+    -fx-text-fill: #A76739;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.purple {
+    -fx-background-color: transparent, transparent, #F3EBFF;
+    -fx-background-radius: 0, 0, 0;
+    -fx-padding: 1 12 1 12;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.purple:selected {
+    -fx-background-color: transparent, #cccccc, #F3EBFF;
+    -fx-background-radius: 0, 0, 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.purple > .tab-container > .tab-label {
+    -fx-text-fill: #715295;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.blue {
+    -fx-background-color: transparent, transparent, #E9F7FF;
+    -fx-background-radius: 0, 0, 0;
+    -fx-padding: 1 12 1 12;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.blue:selected {
+    -fx-background-color: transparent, #cccccc, #E9F7FF;
+    -fx-background-radius: 0, 0, 0;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab.blue > .tab-container > .tab-label {
+    -fx-text-fill: #005C94;
+}
+/*endregion*/
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+    -fx-text-fill: TITLES_COLOR;
+    -fx-font-size: 12 !important;
+    -fx-font-family: "Segoe UI";
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label {
+    -fx-text-fill: BACE_COLOR;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .headers-region > .tab:hover > .tab-container > .tab-label {
+    -fx-text-fill: BACE_COLOR;
+}
+
+.ribbon > .outer-container > .tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: -fx-outer-border, transparent, white;
+    -fx-background-insets: 1 1 0 1, 0 0 1 0, 1;
+}
+
+.ribbon > .outer-container > .tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-width: 0, 0;
+    -fx-border-color: transparent, transparent;
+}
+
+/*endregion*/
+
+/*region ribbon-group*/
+.ribbon-group {
+    -fx-padding: 0 0 5 0;
+}
+
+.ribbon-group .title {
+    -fx-text-fill: TITLES_COLOR;
+    -fx-font-family: "Segoe UI";
+}
+
+.ribbon-group-content {
+    -fx-max-height: 75;
+    -fx-min-height: 75;
+}
+
+.ribbon-group-content > .column {
+    -fx-padding: 6 3 6 3;
+    -fx-spacing: 6;
+}
+
+/*endregion*/
+
+/*region ribbon-item*/
+.ribbon-item .label {
+    -fx-padding: 0 5 0 0;
+}
+
+/*endregion*/
+
+/*region button*/
+.ribbon-group .button {
+    -fx-border-color: transparent !important;
+    -fx-border-width: 0 !important;
+
+    -fx-background-radius: 0 !important;
+    -fx-background-color: transparent !important;
+
+    -fx-font-family: "Segoe UI" !important;
+    -fx-font-size: 12 !important;
+    -fx-text-fill: TEXT_COLOR !important;
+
+    -fx-padding: 1 2 1 2 !important;
+
+    -shrink-animate-on-press: false !important;
+}
+
+.ribbon-group .button.big {
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 75;
+    -fx-max-height: 75;
+}
+
+.ribbon-group .button:hover {
+    -fx-background-color: HIGHLIGHT_COLOR !important;
+}
+
+.ribbon-group .button:pressed, .ribbon-group .button:default:hover:pressed {
+    -fx-background-color: #AEAEAE !important;
+    -fx-text-fill: white !important;
+}
+
+.ribbon-group .button:focused {
+    -fx-border-color: transparent, #AEAEAE !important;
+    -fx-border-width: 1, 1 !important;
+    -fx-border-style: solid !important;
+    -fx-border-radius: 0, 0 !important;
+    -fx-border-insets: 1 1 1 1, 0 !important;
+}
+
+.ribbon-group .button:disabled, .ribbon-group > .button:default:disabled {
+    -fx-opacity: 0.4 !important;
+}
+
+/*endregion*/
+
+/*region menu-button*/
+.ribbon-group .menu-button {
+    -fx-border-color: transparent !important;
+    -fx-border-width: 0 !important;
+
+    -fx-background-radius: 0 !important;
+
+    -fx-background-color: transparent !important;
+
+    -fx-font-family: "Segoe UI" !important;
+    -fx-font-size: 12 !important;
+    -fx-text-fill: TEXT_COLOR !important;
+
+    -fx-padding: -3, -6, -3, -8 !important;
+    -shrink-animate-on-press: false !important;
+}
+
+.ribbon-group .menu-button.big {
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 75;
+    -fx-max-height: 75;
+}
+
+.ribbon-group .menu-button:hover {
+    -fx-background-color: HIGHLIGHT_COLOR !important;
+}
+
+.ribbon-group .menu-button:pressed, .ribbon-group .menu-button:default:hover:pressed {
+    -fx-background-color: #AEAEAE !important;
+    -fx-text-fill: white !important;
+}
+
+.ribbon-group .menu-button:pressed > .arrow-button > .arrow {
+    -fx-background-color: white, white !important;
+}
+
+.ribbon-group .menu-button:focused {
+    -fx-border-color: transparent, #AEAEAE !important;
+    -fx-border-width: 1, 1 !important;
+    -fx-border-style: solid !important;
+    -fx-border-radius: 0, 0 !important;
+    -fx-border-insets: 1 1 1 1, 0 !important;
+}
+
+.ribbon-group .menu-button:disabled, .ribbon-group > .menu-button:default:disabled {
+    -fx-opacity: 0.4 !important;
+    -fx-text-fill: #212121 !important;
+}
+
+.ribbon-group .menu-button:default {
+    -fx-background-color: #008287 !important;
+    -fx-text-fill: white !important;
+}
+
+.ribbon-group .menu-button:default:hover {
+    -fx-background-color: #219297 !important;
+}
+
+/*endregion*/
+
+/*region split-menu-button*/
+.ribbon-group .split-menu-button {
+    -fx-border-color: transparent !important;
+    -fx-border-width: 0 !important;
+
+    -fx-background-radius: 0 !important;
+
+    -fx-background-color: transparent !important;
+
+    -fx-font-family: "Segoe UI" !important;
+    -fx-font-size: 12 !important;
+    -fx-text-fill: TEXT_COLOR !important;
+
+    -fx-padding: -3, -6, -3, -8 !important;
+    -shrink-animate-on-press: false !important;
+}
+
+.ribbon-group .split-menu-button.big {
+    -fx-min-width: 50;
+    -fx-max-width: 50;
+    -fx-min-height: 75;
+    -fx-max-height: 75;
+}
+
+.ribbon-group .split-menu-button:hover {
+    -fx-background-color: HIGHLIGHT_COLOR !important;
+}
+
+.ribbon-group .split-menu-button:pressed, .ribbon-group .menu-button:default:hover:pressed {
+    -fx-background-color: #AEAEAE !important;
+    -fx-text-fill: white !important;
+}
+
+.ribbon-group .split-menu-button:pressed > .arrow-button > .arrow {
+    -fx-background-color: white, white !important;
+}
+
+.ribbon-group .split-menu-button:focused {
+    -fx-border-color: transparent, #AEAEAE !important;
+    -fx-border-width: 1, 1 !important;
+    -fx-border-style: solid !important;
+    -fx-border-radius: 0, 0 !important;
+    -fx-border-insets: 1 1 1 1, 0 !important;
+}
+
+.ribbon-group .split-menu-button:disabled, .ribbon-group > .menu-button:default:disabled {
+    -fx-opacity: 0.4 !important;
+    -fx-text-fill: #212121 !important;
+}
+
+.ribbon-group .split-menu-button:default {
+    -fx-background-color: #008287 !important;
+    -fx-text-fill: white !important;
+}
+
+.ribbon-group .split-menu-button:default:hover {
+    -fx-background-color: #219297 !important;
+}
+
+.ribbon-group .split-menu-button .label {
+    -fx-background-color: transparent;
+}
+
+.ribbon-group .split-menu-button .arrow-button {
+    -fx-background-color: transparent;
+}
+
+/*endregion*/
+
+/*region toggle-button*/
+.ribbon-group .toggle-button {
+    -fx-padding: 1 2 1 2 !important;
+    -fx-border-style: null !important;
+
+    -fx-background-radius: 0 !important;
+    -fx-background-color: transparent !important;
+
+    -fx-font-family: "Segoe UI" !important;
+    -fx-font-size: 12 !important;
+    -fx-text-fill: TEXT_COLOR !important;
+
+    -fx-border-color: transparent !important;
+    -fx-border-width: 2 !important;
+
+    -shrink-animate-on-press: false !important;
+}
+
+.ribbon-group .toggle-button.big {
+    -fx-min-width: 50 !important;
+    -fx-max-width: 50 !important;
+    -fx-min-height: 75 !important;
+    -fx-max-height: 75 !important;
+}
+
+.ribbon-group .toggle-button.normal {
+    -fx-padding: 1 2 1 2 !important;
+}
+
+.ribbon-group .toggle-button:focused {
+    -fx-border-color: transparent, #AEAEAE !important;
+    -fx-border-width: 1, 1 !important;
+    -fx-border-style: solid !important;
+    -fx-border-radius: 0, 0 !important;
+    -fx-border-insets: 1 1 1 1, 0 !important;
+}
+
+.ribbon-group .toggle-button:hover, .ribbon-group .toggle-button:hover:selected {
+    -fx-background-color: HIGHLIGHT_COLOR !important;
+}
+
+.ribbon-group .toggle-button:pressed, .ribbon-group .toggle-button:pressed:selected {
+    -fx-padding: 1 2 1 2 !important;
+    -fx-background-color: #AEAEAE !important;
+    -fx-text-fill: white !important;
+}
+
+.ribbon-group .toggle-button:selected {
+    -fx-background-color: SELECTED_COLOR !important;
+    -fx-text-fill: TEXT_COLOR !important;
+}
+
+.ribbon-group .toggle-button:disabled {
+    -fx-opacity: 0.4 !important;
+}
+
+/*endregion*/
+
+/*region combo-box*/
+.ribbon-group .combo-box {
+    -fx-font-size: 12 !important;
+}
+
+/*endregion*/
+
+/*region tool-bar*/
+.ribbon-group .tool-bar {
+    -fx-padding: 3;
+    -fx-background-color: transparent;
+}
+
+.ribbon-group .tool-bar .button {
+    -fx-padding: 4 !important;
+    /*-fx-background-color: transparent;*/
+    -fx-content-display: graphic-only;
+}
+
+.ribbon-group .tool-bar .toggle-button {
+    /*-fx-padding: 3;*/
+    /*-fx-background-color: transparent;*/
+    -fx-content-display: graphic-only;
+}
+
+/*.ribbon-group .tool-bar .separator {*/
+/*    -fx-background-color: lightgray;*/
+/*    -fx-min-width: 1;*/
+/*    -fx-pref-width: 1;*/
+/*}*/
+
+/*endregion*/
+
+/*region separator*/
+.ribbon-group .separator:vertical .line {
+    -fx-padding: 6 6 6 6;
+
+    -fx-border-color: null;
+    -fx-border-width: 2;
+    -fx-border-insets: 0;
+
+    -fx-min-width: 4;
+    -fx-pref-width: 4;
+    -fx-max-width: 4;
+
+    -fx-background-insets: 3 0 0 3;
+    -fx-background-color: lightgray;
+}
+
+/*endregion*/
+
+/*region quick-access-bar*/
+.quick-access-bar {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+
+    /* align left with first ribbon tab border */
+    -fx-padding: 0 0 0 5;
+}
+
+.quick-access-bar > .outer-container {
+    -fx-padding: 0 5 0 0;
+}
+
+.quick-access-bar > .outer-container > .button-container {
+    -fx-background-color: white;
+    -fx-spacing: 5;
+}
+
+.quick-access-bar > .outer-container .button {
+    -fx-border-color: transparent !important;
+    -fx-border-width: 0 !important;
+    -fx-padding: 0 !important;
+
+    -fx-background-radius: 0 !important;
+
+    -fx-background-color: transparent !important;
+
+    -fx-font-family: "Segoe UI" !important;
+    -fx-text-fill: #828282 !important;
+
+    -fx-min-width: 16;
+    -fx-max-width: 16;
+    -fx-min-height: 16;
+    -fx-max-height: 16;
+
+    -fx-content-display: right;
+    -fx-ellipsis-string: '';
+}
+
+.quick-access-bar > .outer-container .button.store-button > .label {
+    -fx-min-width: 16;
+    -fx-max-width: 120;
+    -fx-min-height: 16;
+    -fx-max-height: 16;
+}
+
+.quick-access-bar > .outer-container .button > .label {
+    -fx-font-size: 12 !important;
+}
+
+.quick-access-bar > .outer-container .button:hover {
+    -fx-background-color: HIGHLIGHT_COLOR !important;
+}
+
+.quick-access-bar > .outer-container .button:pressed {
+    -fx-background-color: #AEAEAE !important;
+    -fx-text-fill: white !important;
+}
+
+.quick-access-bar > .outer-container .button:focused {
+    -fx-border-color: transparent, #AEAEAE !important;
+    -fx-border-width: 1, 1 !important;
+    -fx-border-style: solid !important;
+    -fx-border-radius: 0, 0 !important;
+    -fx-border-insets: 1 1 1 1, 0 !important;
+}
+
+.quick-access-bar > .outer-container .button:disabled {
+    -fx-opacity: 0.4 !important;
+}
+
+.quick-access-bar > .outer-container .button.preferences-button > .label {
+    -fx-text-fill: gray;
+}
+
+.quick-access-bar > .outer-container .button.save-button > .label {
+    -fx-text-fill: gray;
+}
+
+.quick-access-bar > .outer-container .button.help-button > .label {
+    -fx-text-fill: gray;
+}
+
+/*endregion*/

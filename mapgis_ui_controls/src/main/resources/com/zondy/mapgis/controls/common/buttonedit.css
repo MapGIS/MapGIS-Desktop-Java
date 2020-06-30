@@ -1,0 +1,59 @@
+/**
+* @file buttonedit.css
+* @brief ButtonEdit的默认样式.
+*
+* Copyright (C) 2019 ZondyCyber
+*/
+.button-edit {
+    -fx-border-color: #B5B5B5;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-border-radius: 2;
+    -fx-padding: -1 0 0 0;
+
+    -fx-background-color: white;
+    -fx-alignment: center;
+}
+
+.button-edit:disabled {
+    -fx-border-color: #DDDDDD;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+}
+
+.text-field:focused {
+    -fx-background-color: transparent;
+}
+
+.text-field:disabled {
+    -fx-background-color: #EDEDED;
+}
+
+.button {
+    /*-fx-border-color: #959595;*/
+    /*-fx-border-style: solid;*/
+    /*-fx-border-width: 1;*/
+    -fx-background-radius: 0;
+    -fx-padding: 3 2 2 2;
+    -fx-background-color: transparent;
+    -fx-content-display: graphic-only;
+}
+
+.button:focused {
+    -fx-background-color: #D5D5D5
+}
+
+.button:hover {
+    -fx-background-color: #D5D5D5
+}
+
+.button:pressed {
+    -fx-background-color: #EDEDED;
+}
+
+.button:disabled{
+
+    -fx-background-color: #C5C5C5;
+}

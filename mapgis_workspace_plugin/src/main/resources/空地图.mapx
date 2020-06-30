@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="gb2312"?>
+<datacenter>
+	<root filePath="" title="地图文档" subject="" author="" category="" keywords="" comments="" version="MapGIS 10">
+		<subnode name="新地图1" mapguid="b5252cad-2281-46b6-992a-8c7be0098b34" type="Map" class="CreateMap@GisCartoPrj.dll">
+			<description></description>
+			<isDisplayOnLayout>1</isDisplayOnLayout>
+			<isCustomEntireExtent>0</isCustomEntireExtent>
+			<customEntireExtent xmin="0." ymin="0." xmax="0." ymax="0."></customEntireExtent>
+			<viewExtent xmin="0." ymin="0." xmax="0." ymax="0."></viewExtent>
+			<minScale>0.</minScale>
+			<maxScale>0.</maxScale>
+			<isFixedScalesDisplay>0</isFixedScalesDisplay>
+			<isProjTrans>0</isProjTrans>
+			<rotateCenter>
+				<X>0.</X>
+				<Y>0.</Y>
+			</rotateCenter>
+			<rotateAngle>0.</rotateAngle>
+			<backColor>9</backColor>
+			<backgroundImage></backgroundImage>
+			<displayHint>1</displayHint>
+			<fixedScales></fixedScales>
+			<bookMarks></bookMarks>
+			<Extend>
+				<InitOpenView>true</InitOpenView>
+			</Extend>
+			<GraphicsData></GraphicsData>
+		</subnode>
+		<layout class="CreateLayOut@GisCartoPrj.dll">
+			<height>841.000000</height>
+			<width>594.000000</width>
+			<elements>
+				<element bFixAspect="0" bCanScale="1" bCanRotate="0" sysLibGuid="00000000-0000-0000-0000-000000000000" DynamicGridVisible="0" type="MapElement" class="CreateGElement@GisCartoPrj.dll" MapName="新地图1" MapGuid="b5252cad-2281-46b6-992a-8c7be0098b34">
+					<MapElementCustiomViewExtent>
+						<xmin>0.</xmin>
+						<ymin>0.</ymin>
+						<xmax>0.</xmax>
+						<ymax>0.</ymax>
+					</MapElementCustiomViewExtent>
+					<Extend></Extend>
+					<border visible="0" xGrap="0." yGrap="0." BorderType="0">
+						<SimpleBorderInfo cornerRounding="0" FillType="0" lib="0" id="0" ovprnt="0" outpenw="0;0;0" outclr="0;0;0" headtype="0" jointype="0" adjustflg="0" makemethod="0" xscale="0" yscale="0"></SimpleBorderInfo>
+						<LaceBorderInfo>
+							<corners>
+								<cornerLB dx="0." dy="0." lib="0" id="0" height="0" width="0" angle="0" outpenw="0;0;0" outclr="0;0;0" ovprnt="0" fillflg="0" backexp="0" backclr="0"></cornerLB>
+								<cornerRB dx="0." dy="0." lib="0" id="0" height="0" width="0" angle="0" outpenw="0;0;0" outclr="0;0;0" ovprnt="0" fillflg="0" backexp="0" backclr="0"></cornerRB>
+								<cornerRT dx="0." dy="0." lib="0" id="0" height="0" width="0" angle="0" outpenw="0;0;0" outclr="0;0;0" ovprnt="0" fillflg="0" backexp="0" backclr="0"></cornerRT>
+								<cornerLT dx="0." dy="0." lib="0" id="0" height="0" width="0" angle="0" outpenw="0;0;0" outclr="0;0;0" ovprnt="0" fillflg="0" backexp="0" backclr="0"></cornerLT>
+							</corners>
+							<borders adjustmode="0">
+								<borderleft gap="0."></borderleft>
+								<borderright gap="0."></borderright>
+								<bordertop gap="0."></bordertop>
+								<borderbottom gap="0."></borderbottom>
+								<borderclose gap="0."></borderclose>
+							</borders>
+							<lines></lines>
+						</LaceBorderInfo>
+					</border>
+					<background visible="0" cornerRounding="0" xGrap="0." yGrap="0.">
+						<info lib="0" id="0" ovprnt="0" fillmode="0" fillclr="0" endclr="0" pathei="0" patwid="0" ang="0" patclr="0" outpenw="0" fullpatflg="0"></info>
+					</background>
+					<shadow visible="0" cornerRounding="0" xGrap="0." yGrap="0.">
+						<info lib="0" id="0" ovprnt="0" fillmode="0" fillclr="0" endclr="0" pathei="0" patwid="0" ang="0" patclr="0" outpenw="0" fullpatflg="0"></info>
+					</shadow>
+					<LogicRect xmin="0." ymin="0." xmax="594." ymax="841."></LogicRect>
+				</element>
+			</elements>
+			<bookMarks></bookMarks>
+		</layout>
+		<Extend></Extend>
+	</root>
+</datacenter>

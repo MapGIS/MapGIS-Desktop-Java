@@ -1,0 +1,250 @@
+/**
+* @file dockfx.css
+* @brief 停靠控件的默认样式.
+*
+* Copyright (C) 2019 ZondyCyber
+*/
+
+/*region DockPane*/
+.dock-pane {
+    -fx-background: rgb(235, 236, 239);
+}
+
+.dock-root-pane {
+    -fx-background-color: #11992200;
+    -fx-padding: 5;
+}
+
+.dock-root-pane .button {
+    -fx-padding: 4;
+}
+
+/*endregion*/
+
+/*region Indicator*/
+.dock-area-indicator {
+    -fx-fill: #23ACFF28;
+    -fx-stroke: #23ACFF32;
+    -fx-stroke-width: 5;
+    -fx-stroke-type: inside;
+}
+
+.dock-pos-indicator {
+    -fx-padding: 20;
+    -fx-hgap: 20;
+    -fx-vgap: 20;
+    -fx-shape: "M0,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0";
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dock-pos-indicator .button {
+    -fx-padding: 4;
+}
+
+.dock-fill-indicator {
+    -fx-padding: 20;
+    -fx-shape: "M0,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0";
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dock-fill-indicator .button {
+    -fx-padding: 4;
+}
+
+/*endregion*/
+
+/*region 停靠指示方位*/
+.dock-fill {
+    -fx-graphic: url(Png_DockCenter_32.png);
+    /*-fx-padding: 4;*/
+}
+
+.dock-center {
+    -fx-graphic: url(Png_DockCenter_32.png);
+}
+
+.dock-top {
+    -fx-graphic: url(Png_DockTop_32.png);
+}
+
+.dock-right {
+    -fx-graphic: url(Png_DockRight_32.png);
+}
+
+.dock-bottom {
+    -fx-graphic: url(Png_DockBottom_32.png);
+}
+
+.dock-left {
+    -fx-graphic: url(Png_DockLeft_32.png);
+}
+
+.dock-top-root {
+    -fx-graphic: url(Png_DockRootTop_32.png);
+}
+
+.dock-right-root {
+    -fx-graphic: url(Png_DockRootRight_32.png);
+}
+
+.dock-bottom-root {
+    -fx-graphic: url(Png_DockRootBottom_32.png);
+}
+
+.dock-left-root {
+    -fx-graphic: url(Png_DockRootLeft_32.png);
+}
+
+/*endregion*/
+
+/*region DockWindow*/
+.dock-window {
+    -fx-background-color: -fx-background;
+    -fx-border-radius: 5;
+}
+
+.dock-window-border {
+    -fx-padding: 3;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0.2, 0, 0);
+}
+
+.dock-window-border:maximized {
+    -fx-padding: 0;
+}
+
+/*endregion*/
+
+/*region dock-title-bar*/
+.dock-title-bar {
+    -fx-background-color: transparent;
+    -fx-padding: 2;
+    -fx-spacing: 3;
+    -fx-border-width: 0;
+    -fx-border-color: -fx-outer-border;
+}
+
+.dock-title-label {
+    -fx-background-color: transparent;
+    -fx-graphic: url(defaultdock.png);
+    -fx-padding: 0 0 3 0;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.2), 0, 0, 0, 1);
+}
+
+.dock-title-bar .button {
+    -fx-padding: 1 4 1 4;
+}
+
+
+.dock-minimize-button {
+    -fx-graphic: url(minimize.png);
+    -fx-background-color: transparent;
+}
+
+.dock-minimize-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-window:floating .dock-minimize-button {
+    -fx-background-color: transparent;
+}
+
+.dock-window:floating .dock-minimize-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-window:maximized .dock-minimize-button-close-button {
+    -fx-background-color: transparent;
+}
+
+.dock-window:maximized .dock-minimize-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-maximize-button {
+    -fx-graphic: url(maximize.png);
+    -fx-background-color: transparent;
+}
+
+.dock-maximize-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-window:floating .dock-maximize-button {
+    -fx-background-color: transparent;
+}
+
+.dock-window:floating .dock-maximize-button-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-window:maximized .dock-maximize-button {
+    -fx-background-color: transparent;
+}
+
+.dock-window:maximized .dock-maximize-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-restore-button {
+    -fx-graphic: url(restore.png);
+    -fx-background-color: transparent;
+}
+
+.dock-restore-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-float-button {
+    -fx-graphic: url(restore.png);
+    -fx-background-color: transparent;
+}
+
+.dock-float-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-window:floating .dock-restore-button {
+    -fx-background-color: transparent;
+}
+
+.dock-window:floating .dock-restore-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-window:maximized .dock-restore-button {
+    -fx-background-color: transparent;
+}
+
+.dock-window:maximized .dock-restore-button-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-close-button {
+    -fx-graphic: url(close.png);
+    -fx-background-color: transparent;
+}
+
+.dock-close-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-window:floating .dock-close-button {
+    -fx-background-color: transparent;
+}
+
+.dock-window:floating .dock-close-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+.dock-window:maximized .dock-close-button {
+    -fx-background-color: transparent;
+}
+
+.dock-window:maximized .dock-close-button:hover {
+    -fx-background-color: rgba(0, 0, 100, 0.2);
+}
+
+/*endregion*/
