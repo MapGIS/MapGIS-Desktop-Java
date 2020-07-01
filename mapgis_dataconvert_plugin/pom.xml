@@ -15,7 +15,7 @@
         <dependency>
             <groupId>com.zondy.mapgis</groupId>
             <artifactId>mapgis_geoanalysis</artifactId>
-            <version>1.0.0-SNAPSHORT</version>
+            <version>1.0-SNAPSHOT</version>
             <scope>system</scope>
             <systemPath>${pom.basedir}/../bin/mapgis_geoanalysis.jar</systemPath>
         </dependency>
